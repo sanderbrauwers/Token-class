@@ -2,7 +2,7 @@
 class Token{
 
 	private $length;
-
+	
 	private function crypto_rand_secure($min, $max) {
 	  $range = $max - $min;
 	  if ($range < 0) return $min; // not so random...
@@ -33,3 +33,4 @@ class Token{
 		return $this->generateToken();
 	}
 }
+?>
